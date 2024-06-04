@@ -1,0 +1,89 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.scene {
+  height: 100vh;
+  position: relative;
+  background: linear-gradient(#a6d8ff, #fff, #fff);
+}
+.sunimage{
+    top: 5%;
+    left: 50%;
+    width: 50px;
+    height: 50px;
+    z-index: 100;
+    border-radius: 50%;
+    animation: sun 1s linear infinite;
+    position: absolute;
+}
+.sunimage img{
+    width: 220px;
+}
+/* .sun {
+  top: 100px;
+  left: 50%;
+  width: 100px;
+  height: 100px;
+  z-index: 100;
+  border-radius: 50%;
+  background-color: white;
+  position: absolute;
+} */
+.bg img{
+  position: absolute;
+  width: 100%;
+  z-index: 99;
+  height: 800px;
+  bottom: 0;
+}
+.copcar{
+    position: absolute;
+    bottom: 0%;
+    z-index: 100;
+    animation: car 3s linear infinite;
+}
+.copcar2{
+    position: absolute;
+    bottom: 12%;
+    z-index: 100;
+    right: 0;
+    animation: car2 3s linear infinite;
+    z-index: 100;
+}
+@keyframes car2{
+    0%{
+        transform: translate(400px);
+        }
+        
+    100%{
+        transform: translate(-1700px);
+    }    
+}
+.bg{
+    position: absolute;
+    bottom: 0;
+    z-index: 99;
+    height: 800px;
+    width: 100%;
+    background-color: #fff
+}
+
+@keyframes car{
+    0%{
+        transform: translate(-400px);
+        }
+    
+        
+    100%{
+        transform: translate(1700px);
+    }    
+}
+.copcar img{
+    width: 300px;
+}
+.copcar2 img{
+    width: 300px;
+}
+@keyframes 
